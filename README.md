@@ -1,7 +1,7 @@
 <p align="center">
   <img src=".github/assets/Logo_Animated.svg" alt="Fedoraware Logo" width="250" align="center">
   <br/>
-  <a href="https://nightly.link/Fedoraware/Fedoraware/workflows/msbuild/main/Fedoraware.zip">
+Download build not yet. Compiling
     <img src=".github/assets/download.png" alt="Download Button" width="400" height="auto" align="center">
   </a>
 </p>
