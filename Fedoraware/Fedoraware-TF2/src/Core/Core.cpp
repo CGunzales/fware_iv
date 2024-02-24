@@ -33,7 +33,7 @@ void CCore::OnLoaded()
 	LoadDefaultConfig();
 
 	I::Cvar->ConsoleColorPrintf(Vars::Menu::Colors::MenuAccent.Value, "%s Loaded!\n", Vars::Menu::CheatName.Value.c_str());
-	I::EngineClient->ClientCmd_Unrestricted("play vo/items/wheatley_sapper/wheatley_sapper_attached14.mp3");
+	I::EngineClient->ClientCmd_Unrestricted("play vo/demoman_go01.mp3");
 
 	// Check the DirectX version
 	const int dxLevel = g_ConVars.FindVar("mat_dxlevel")->GetInt();
@@ -71,7 +71,7 @@ void CCore::Load()
 
 void CCore::Unload()
 {
-	I::EngineClient->ClientCmd_Unrestricted("play vo/items/wheatley_sapper/wheatley_sapper_hacked02.mp3");
+	I::EngineClient->ClientCmd_Unrestricted("play vo/heavy_no01.mp3");
 	G::UnloadWndProcHook = true;
 	Vars::Visuals::SkyboxChanger.Value = false;
 	Vars::Visuals::ThirdPerson.Value = false;
