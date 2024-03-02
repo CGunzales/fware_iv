@@ -1044,7 +1044,7 @@ namespace Vars
 		CVar(SkyModulation, Color_t(255, 255, 255, 255), IS_VISUAL);
 		CVar(StaticPropModulation, Color_t(255, 255, 255, 255), IS_VISUAL);
 		CVar(ParticleColor, Color_t(255, 255, 255, 255), IS_VISUAL);
-		CVar(FOVCircle, Color_t(255, 255, 255, 255), IS_VISUAL);
+		CVar(FOVCircle, Color_t(0, 0, 0, 0), IS_VISUAL);
 		CVar(Bones, Color_t(255, 255, 255, 255), IS_VISUAL);
 		CVar(BulletTracer, Color_t(255, 255, 255, 255), IS_VISUAL);
 		CVar(FeetColor, Color_t(255, 150, 0, 255), IS_VISUAL);
