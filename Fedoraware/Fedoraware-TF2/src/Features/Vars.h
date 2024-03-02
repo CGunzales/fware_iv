@@ -300,7 +300,7 @@ namespace Vars
 	NAMESPACE_BEGIN(Triggerbot);
 
 	SUBNAMESPACE_BEGIN(Global)
-		CVar(Active, false)
+		CVar(Active, true)
 		CVar(TriggerKey, VK_SHIFT)
 		CVar(IgnoreOptions, 0b00001); //disguised, fakelagging players, taunting, friends, cloaked, invul
 	SUBNAMESPACE_END(Global);
@@ -703,8 +703,8 @@ namespace Vars
 	CVar(VMOffZ, 0, IS_VISUAL);
 	CVar(VMRoll, 0, IS_VISUAL);
 	CVar(NotificationLifetime, 5.f, IS_VISUAL);
-	CVar(DrawNotifLine, true, IS_VISUAL);
-	CVar(DrawNotifGradient, true, IS_VISUAL);
+	CVar(DrawNotifLine, false, IS_VISUAL);
+	CVar(DrawNotifGradient, false, IS_VISUAL);
 	CVar(DamageLoggerText, false, IS_VISUAL);
 	CVar(DamageLoggerChat, false, IS_VISUAL);
 	CVar(DamageLoggerConsole, false, IS_VISUAL);
@@ -732,7 +732,7 @@ namespace Vars
 		CVar(Flags, 65792, IS_VISUAL)
 		CVar(Segments, 2, IS_VISUAL)
 		CVar(BeamColour, Color_t(255, 255, 255, 255), IS_VISUAL)
-		CVar(Model, std::string("sprites/physbeam.vmt"), IS_VISUAL);
+		CVar(Model, std::string(""), IS_VISUAL);
 	SUBNAMESPACE_END(Beans);
 
 	SUBNAMESPACE_BEGIN(RagdollEffects)
@@ -774,7 +774,7 @@ namespace Vars
 	CVar(AccurateMovement, 0);
 	CVar(AltMovement, 0b0000);	//	0000 {Fast Strafe, Fast Accel, Fast Crouch, Kart Contr);
 	CVar(AutoJump, true);
-	CVar(AutoVote, true);
+	CVar(AutoVote, false);
 	CVar(DuckJump, false);
 	CVar(AutoStrafe, 0);
 	CVar(DirectionalOnlyOnMove, false);
@@ -873,7 +873,7 @@ namespace Vars
 
 	SUBNAMESPACE_BEGIN(CL_Move)
 		CVar(Enabled, false)
-		CVar(Doubletap, false)
+		CVar(Doubletap, true)
 		CVar(SafeTick, false)
 		CVar(SafeTickAirOverride, false)
 		CVar(PassiveRecharge, 0)
@@ -892,9 +892,9 @@ namespace Vars
 		CVar(RechargeWhileDead, false)
 		CVar(AutoRecharge, false) //H
 		CVar(AntiWarp, false) //H
-		CVar(DTMode, 0) // 0 - On Key, 1 - Always DT, 2 - Disable on key, 3 - Disabled
+		CVar(DTMode, 1) // 0 - On Key, 1 - Always DT, 2 - Disable on key, 3 - Disabled
 		CVar(DTBarStyle, 3, IS_VISUAL)
-		CVar(DTTicks, 21)
+		CVar(DTTicks, 20)
 		CVar(WaitForDT, false)
 		CVar(Fakelag, false)
 		CVar(FakelagMode, 0) // 0 - plain, 1 - random
@@ -926,7 +926,7 @@ namespace Vars
 	SUBNAMESPACE_BEGIN(Steam)
 		CVar(EnableRPC, false)
 		CVar(MatchGroup, 3) // 0 - Special Event; 1 - MvM Mann Up; 2 - Competitive; 3 - Casual; 4 - MvM Boot Camp;
-		CVar(OverrideMenu, true) // Override matchgroup when in main menu
+		CVar(OverrideMenu, false) // Override matchgroup when in main menu
 		CVar(MapText, 5) // 0 - Fedoraware; 1 - CUM.clab; 2 - Meowhook.club; 3 - rathook.cc; 4 - NNitro.tf; 5 - custom;
 		CVar(GroupSize, 1337)
 		CVar(CustomText, std::string("Cuando yo la vi"));
@@ -1016,8 +1016,8 @@ namespace Vars
 	NAMESPACE_END(Fonts);
 
 	NAMESPACE_BEGIN(Colours);
-		CVar(DTBarIndicatorsCharged, Gradient_t({ 106, 255, 131, 180 }, { 106, 255, 250, 180 }), IS_VISUAL);
-		CVar(DTBarIndicatorsCharging, Gradient_t({ 255, 192, 81, 180 }, { 255, 134, 81, 180 }), IS_VISUAL);
+		CVar(DTBarIndicatorsCharged, Gradient_t({ 0, 0, 0, 0 }, { 0, 0, 0, 0 }), IS_VISUAL);
+		CVar(DTBarIndicatorsCharging, Gradient_t({ 0, 0, 0, 0 }, { 0, 0, 0, 0 }), IS_VISUAL);
 		CVar(ChokedBar, Gradient_t({ 47, 39, 0, 255 }, { 255, 210, 0, 255 }), IS_VISUAL);
 		CVar(GradientHealthBar, Gradient_t({ 255, 0, 0, 255 }, { 0, 202, 124, 255 }), IS_VISUAL);
 		CVar(GradientOverhealBar, Gradient_t({ 0, 202, 124, 255 }, { 167, 255, 237, 255 }), IS_VISUAL);
