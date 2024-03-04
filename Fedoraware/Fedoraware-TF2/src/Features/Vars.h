@@ -658,7 +658,7 @@ namespace Vars
 	CVar(ToolTips, false, IS_VISUAL);
 	CVar(ThirdPerson, false, IS_VISUAL);
 	CVar(ThirdPersonKey, VK_B, IS_VISUAL);
-	CVar(ThirdPersonSilentAngles, false, IS_VISUAL);
+	CVar(ThirdPersonSilentAngles, true, IS_VISUAL);
 	CVar(ThirdPersonInstantYaw, false, IS_VISUAL);
 	CVar(ThirdPersonServerHitbox, false, IS_VISUAL);
 	CVar(ThirdpersonOffset, false, IS_VISUAL);
@@ -689,7 +689,7 @@ namespace Vars
 	CVar(SeperatorLength, 12, IS_VISUAL);
 	CVar(SeperatorSpacing, 6, IS_VISUAL);
 	CVar(ProjectileTrajectory, false, IS_VISUAL);
-	CVar(ParticleTracer, 2, IS_VISUAL);
+	CVar(ParticleTracer, 0, IS_VISUAL);
 	CVar(DoPostProcessing, false, IS_VISUAL);
 	CVar(BulletTracerRainbow, false, IS_VISUAL);
 	CVar(AimPosSquare, false, IS_VISUAL);
@@ -702,7 +702,7 @@ namespace Vars
 	CVar(VMOffY, 0, IS_VISUAL);
 	CVar(VMOffZ, 0, IS_VISUAL);
 	CVar(VMRoll, 0, IS_VISUAL);
-	CVar(NotificationLifetime, 5.f, IS_VISUAL);
+	CVar(NotificationLifetime, 1.f, IS_VISUAL);
 	CVar(DrawNotifLine, false, IS_VISUAL);
 	CVar(DrawNotifGradient, false, IS_VISUAL);
 	CVar(DamageLoggerText, false, IS_VISUAL);
