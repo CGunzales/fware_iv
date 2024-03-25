@@ -785,7 +785,7 @@ namespace Vars
 	CVar(TauntSpinKey, 0);
 	CVar(TauntSpinSpeed, 5.f);
 	CVar(TauntFollowsCamera, false);
-	CVar(BypassPure, false);
+	CVar(BypassPure, true);
 	CVar(NoisemakerSpam, false);
 	CVar(DisableInterpolation, true);
 	CVar(FixInputDelay, false);
@@ -893,7 +893,7 @@ namespace Vars
 		CVar(AutoRecharge, false) //H
 		CVar(AntiWarp, false) //H
 		CVar(DTMode, 1) // 0 - On Key, 1 - Always DT, 2 - Disable on key, 3 - Disabled
-		CVar(DTBarStyle, 3, IS_VISUAL)
+		CVar(DTBarStyle, 0, IS_VISUAL)
 		CVar(DTTicks, 20)
 		CVar(WaitForDT, false)
 		CVar(Fakelag, false)
