@@ -773,7 +773,7 @@ namespace Vars
 
 	CVar(AccurateMovement, 0);
 	CVar(AltMovement, 0b0000);	//	0000 {Fast Strafe, Fast Accel, Fast Crouch, Kart Contr);
-	CVar(AutoJump, true);
+	CVar(AutoJump, false);
 	CVar(AutoVote, false);
 	CVar(DuckJump, false);
 	CVar(AutoStrafe, 0);
