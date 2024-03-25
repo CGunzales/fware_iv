@@ -804,7 +804,7 @@ namespace Vars
 	CVar(InfiniteEatKey, 0x0);
 	CVar(EdgeJumpKey, VK_MENU);
 	CVar(AntiAFK, true);
-	CVar(VotingOptions, 0b000011); // 000011 {verbose, autovote, party, chat, console, te);
+	CVar(VotingOptions, 0b000000); // 000011 {verbose, autovote, party, chat, console, te);
 	CVar(CheatsBypass, false);
 	CVar(AntiAutobal, false);
 	CVar(RageRetry, false);
