@@ -184,9 +184,9 @@ namespace Vars
 
 	NAMESPACE_BEGIN(Backtrack);
 
-	CVar(Enabled, true);
-	CVar(UnchokePrediction, true);
-	CVar(AllowForward, true);
+	CVar(Enabled, false);
+	CVar(UnchokePrediction, false);
+	CVar(AllowForward, false);
 	CVar(Latency, 0);
 
 	SUBNAMESPACE_BEGIN(BtChams)
@@ -242,7 +242,7 @@ namespace Vars
 		CVar(ScanBuildings, false)
 		CVar(WaitForHeadshot, true)
 		CVar(WaitForCharge, false)
-		CVar(SpectatedSmooth, true)
+		CVar(SpectatedSmooth, false)
 		CVar(ScopedOnly, false)
 		CVar(AutoScope, false)
 		CVar(AutoRev, false)
@@ -256,13 +256,13 @@ namespace Vars
 		CVar(RespectFOV, true)
 		CVar(AimMethod, 2) //0 - Normal,	1 - Smooth, 2 - Silent
 		CVar(AimPosition, 3) // 0/head, 1/body, 2/feet, 3/auto
-		CVar(VisTestPoints, 7) //how many points are we allowed to vis test before we stop scanning.
-		CVar(ScanPoints, 7) //how many "visible points" need to be reached before we stop searching.
+		CVar(VisTestPoints, 4) //how many points are we allowed to vis test before we stop scanning.
+		CVar(ScanPoints, 6) //how many "visible points" need to be reached before we stop searching.
 		CVar(ScanScale, 1.0f) // how to scale the points.
 		CVar(AllowedHitboxes, 0b110) // 111, Feet, Body, Head.
 		CVar(FeetAimIfOnGround, false)
 		CVar(BounceKey, 0x0)
-		CVar(SplashPrediction, true)
+		CVar(SplashPrediction, false)
 		CVar(MinSplashPredictionDistance, 0)
 		CVar(MaxSplashPredictionDistance, 10000)
 		CVar(PredictionColor, Color_t(255, 255, 255, 255), IS_VISUAL) // Why is this not in colours??? 
@@ -281,7 +281,7 @@ namespace Vars
 	SUBNAMESPACE_BEGIN(Melee)
 		CVar(SortMethod, 0) //0 - FOV,		1 - Distance
 		CVar(RespectFOV, false)
-		CVar(RequireBind, true)
+		CVar(RequireBind, false)
 		CVar(AimMethod, 2) //0 - Normal,	1 - Smooth, 2 - Silent
 		CVar(SmoothingAmount, 8)
 		CVar(RangeCheck, false)
@@ -773,7 +773,7 @@ namespace Vars
 
 	CVar(AccurateMovement, 0);
 	CVar(AltMovement, 0b0000);	//	0000 {Fast Strafe, Fast Accel, Fast Crouch, Kart Contr);
-	CVar(AutoJump, false);
+	CVar(AutoJump, true);
 	CVar(AutoVote, false);
 	CVar(DuckJump, false);
 	CVar(AutoStrafe, 0);
@@ -872,7 +872,7 @@ namespace Vars
 	SUBNAMESPACE_END(CheaterDetection);
 
 	SUBNAMESPACE_BEGIN(CL_Move)
-		CVar(Enabled, false)
+		CVar(Enabled, true)
 		CVar(Doubletap, true)
 		CVar(SafeTick, false)
 		CVar(SafeTickAirOverride, false)
@@ -941,14 +941,14 @@ namespace Vars
 		CVar(ToggleKey, 0)
 		CVar(InvertKey, 0)
 		CVar(PitchFake, 0)	//	0.none, 1.up, 2.down
-		CVar(PitchReal, 1)	//	0.none, 1.up, 2.down, 3.zero, 4.custom
+		CVar(PitchReal, 0)	//	0.none, 1.up, 2.down, 3.zero, 4.custom
 		CVar(YawFake, 0)	//	0.none, 1.left, 2.right, 3.forward, 4.backward, 5.spin, 6.edge, 7.invert
-		CVar(YawReal, 3)	//	0.none, 1.left, 2.right, 3.forward, 4.backward, 5.spin, 6.edge, 7.invert
+		CVar(YawReal, 0)	//	0.none, 1.left, 2.right, 3.forward, 4.backward, 5.spin, 6.edge, 7.invert
 		CVar(BaseYawMode, 0)
 		CVar(BaseYawOffset, 0.f)
 		CVar(SpinSpeed, 15.f)
 		CVar(CustomRealPitch, 0.f)
-		CVar(RehideAntiAimPostShot, true)
+		CVar(RehideAntiAimPostShot, false)
 		CVar(AntiBackstab, true)
 		CVar(LegJitter, false) // frick u fourteen
 		CVar(InvalidShootPitch, false); // i dont know what to name this its TRASH
