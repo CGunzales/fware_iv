@@ -624,11 +624,11 @@ namespace Vars
 	CVar(AimFOVAlpha, 10, IS_VISUAL);
 	CVar(RemoveScope, false, IS_VISUAL);
 	CVar(RemoveRagdolls, true, IS_VISUAL);
-	CVar(RemoveMOTD, true, IS_VISUAL);
-	CVar(RemoveScreenEffects, false, IS_VISUAL);
+	CVar(RemoveMOTD, false, IS_VISUAL);
+	CVar(RemoveScreenEffects, true, IS_VISUAL);
 	CVar(RemoveScreenOverlays, false, IS_VISUAL);
 	CVar(RemoveConvarQueries, false, IS_VISUAL);
-	CVar(RemoveDSP, false, IS_VISUAL);
+	CVar(RemoveDSP, true, IS_VISUAL);
 	CVar(VisualOverlay, 0, IS_VISUAL);
 	CVar(PreventForcedAngles, false, IS_VISUAL);
 	CVar(ScopeLines, false, IS_VISUAL);
@@ -658,7 +658,7 @@ namespace Vars
 	CVar(ToolTips, false, IS_VISUAL);
 	CVar(ThirdPerson, false, IS_VISUAL);
 	CVar(ThirdPersonKey, VK_B, IS_VISUAL);
-	CVar(ThirdPersonSilentAngles, true, IS_VISUAL);
+	CVar(ThirdPersonSilentAngles, false, IS_VISUAL);
 	CVar(ThirdPersonInstantYaw, false, IS_VISUAL);
 	CVar(ThirdPersonServerHitbox, false, IS_VISUAL);
 	CVar(ThirdpersonOffset, false, IS_VISUAL);
@@ -787,7 +787,7 @@ namespace Vars
 	CVar(TauntFollowsCamera, false);
 	CVar(BypassPure, true);
 	CVar(NoisemakerSpam, false);
-	CVar(DisableInterpolation, true);
+	CVar(DisableInterpolation, false);
 	CVar(FixInputDelay, false);
 	CVar(MedalFlip, false);
 	CVar(AutoRocketJump, false);
@@ -924,12 +924,12 @@ namespace Vars
 	SUBNAMESPACE_END(Discord);
 
 	SUBNAMESPACE_BEGIN(Steam)
-		CVar(EnableRPC, false)
-		CVar(MatchGroup, 3) // 0 - Special Event; 1 - MvM Mann Up; 2 - Competitive; 3 - Casual; 4 - MvM Boot Camp;
+		CVar(EnableRPC, true)
+		CVar(MatchGroup, 0) // 0 - Special Event; 1 - MvM Mann Up; 2 - Competitive; 3 - Casual; 4 - MvM Boot Camp;
 		CVar(OverrideMenu, false) // Override matchgroup when in main menu
 		CVar(MapText, 5) // 0 - Fedoraware; 1 - CUM.clab; 2 - Meowhook.club; 3 - rathook.cc; 4 - NNitro.tf; 5 - custom;
-		CVar(GroupSize, 1337)
-		CVar(CustomText, std::string("Cuando yo la vi"));
+		CVar(GroupSize, 4)
+		CVar(CustomText, std::string("ctf_2fort"));
 	SUBNAMESPACE_END(Steam);
 
 	NAMESPACE_END(Misc);
