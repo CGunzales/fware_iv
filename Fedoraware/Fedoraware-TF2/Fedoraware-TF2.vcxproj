@@ -17,7 +17,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <ProjectGuid>{D75548B5-A1DB-4EA1-8CC1-3E09C441B4B2}</ProjectGuid>
-    <RootNamespace>Fedoraware-TF2</RootNamespace>
+    <RootNamespace>Fw-iv</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>fw</ProjectName>
   </PropertyGroup>
