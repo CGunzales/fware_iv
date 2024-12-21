@@ -1251,7 +1251,7 @@ void CMisc::SteamRPC()
 		{
 			g_SteamInterfaces.Friends->SetRichPresence("steam_display", "");
 			//this will only make it say "Team Fortress 2" until the player leaves/joins some server. its bad but its better than making 1000 checks to recreate the original
-			SteamCleared = true;
+			SteamCleared = false;
 		}
 		return;
 	}
@@ -1313,7 +1313,7 @@ void CMisc::SteamRPC()
 		case 0:
 			if (Vars::Misc::Steam::CustomText.Value.empty())
 			{
-				g_SteamInterfaces.Friends->SetRichPresence("currentmap", "Fedoraware");
+				g_SteamInterfaces.Friends->SetRichPresence("currentmap", "");
 			}
 			else
 			{
@@ -1321,22 +1321,22 @@ void CMisc::SteamRPC()
 			}
 			break;
 		case 1:
-			g_SteamInterfaces.Friends->SetRichPresence("currentmap", "Fedoraware");
+			g_SteamInterfaces.Friends->SetRichPresence("currentmap", "");
 			break;
 		case 2:
-			g_SteamInterfaces.Friends->SetRichPresence("currentmap", "Figoraware");
+			g_SteamInterfaces.Friends->SetRichPresence("currentmap", "");
 			break;
 		case 3:
-			g_SteamInterfaces.Friends->SetRichPresence("currentmap", "Meowhook.club");
+			g_SteamInterfaces.Friends->SetRichPresence("currentmap", "");
 			break;
 		case 4:
-			g_SteamInterfaces.Friends->SetRichPresence("currentmap", "Rathook.cc");
+			g_SteamInterfaces.Friends->SetRichPresence("currentmap", "");
 			break;
 		case 5:
-			g_SteamInterfaces.Friends->SetRichPresence("currentmap", "Nitro.tf");
+			g_SteamInterfaces.Friends->SetRichPresence("currentmap", "");
 			break;
 		default:
-			g_SteamInterfaces.Friends->SetRichPresence("currentmap", "Fedoraware");
+			g_SteamInterfaces.Friends->SetRichPresence("currentmap", "");
 			break;
 	}
 
