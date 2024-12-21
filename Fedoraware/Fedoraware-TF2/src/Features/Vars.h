@@ -172,10 +172,10 @@ namespace Vars
 
 	NAMESPACE_BEGIN(CritHack);
 
-	CVar(Active, true);
+	CVar(Active, false); //lastimosamente y temporalmente
 	CVar(Indicators, false, IS_VISUAL);
 	CVar(IndicatorPos, DragBox_t(), IS_VISUAL);
-	CVar(AvoidRandom, true);
+	CVar(AvoidRandom, false); //forzado es menos probable
 	CVar(AlwaysMelee, false);
 	CVar(CritKey, VK_SHIFT);
 	CVar(AutoMeleeCrit, false);
