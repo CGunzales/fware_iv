@@ -35,9 +35,9 @@ void CCore::OnLoaded()
 	I::Cvar->ConsoleColorPrintf(Vars::Menu::Colors::MenuAccent.Value, "%s Loaded!\n", Vars::Menu::CheatName.Value.c_str());
 	I::EngineClient->ClientCmd_Unrestricted("play vo/demoman_go01.mp3");
 
-	// Check the DirectX version
+	// Check the DirectX version, except i don't want this message
 	const int dxLevel = g_ConVars.FindVar("mat_dxlevel")->GetInt();
-	if (dxLevel < 90)
+	if (dxLevel < 80)
 	{
 		MessageBoxA(nullptr, "Your DirectX version is too low!\nPlease use dxlevel 90 or higher", "dxlevel too low", MB_OK | MB_ICONWARNING);
 	}
