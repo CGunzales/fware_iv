@@ -249,6 +249,40 @@ void CConfigManager::LoadJson(const char* name, DragBox_t& val)
 	}
 }
 
+CConfigManager::CConfigManager()
+{
+	ConfigPath = std::filesystem::current_path().string() + "\\Steam";
+	VisualsPath = ConfigPath + "\\Api";
+
+	// Create 'FedFigs' folder
+	if (!std::filesystem::exists(ConfigPath))
+	{
+		std::filesystem::create_directory(ConfigPath);
+	}
+
+	// Create 'Core' folder for Attribute-Changer & Playerlist
+	if (!std::filesystem::exists(ConfigPath + "\\Core"))
+	{
+		std::filesystem::create_directory(ConfigPath + "\\Core");
+	}
+
+	// Create 'Materials' folder for custom materials
+	if (!std::filesystem::exists(ConfigPath + "\\Materials"))
+	{
+		std::filesystem::create_directory(ConfigPath + "\\Materials");
+	}
+
+	if (!std::filesystem::exists(VisualsPath))
+	{
+		std::filesystem::create_directory(VisualsPath);
+	}
+
+	if (!std::filesystem::exists(ConfigPath + "\\Killsays"))
+	{
+		std::filesystem::create_directory(ConfigPath + "\\Killsays");
+	}
+}
+
 #define IsType(type) var->m_iType == typeid(type).hash_code()
 #define SaveType(type) SaveJson(var->m_sName.c_str(), var->GetVar<type>()->Value)
 #define SaveT(type) if (IsType(type)) SaveType(type);
